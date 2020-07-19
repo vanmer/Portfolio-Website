@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -19,11 +20,11 @@ body {
 }
 
 h1 {
-  font-size: 2.9em;
+  font-size: 2.4em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 
@@ -80,8 +81,8 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 50vw;
+  width: 100vw;
+  height: 100vh;
   z-index: 5;
 }
 
@@ -98,13 +99,17 @@ nav a:hover {
   align-items: center;
 }
 
+.hero {
+    height: 100%;
+    position: relative;
+}
+
 canvas {
-  border: 1px solid black;
   position: absolute;
-  width: 100%;
-  height: 50vw;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
-  display: flex;
+  display: block;
 }
 
 @media only screen and (max-width: 500px) {
@@ -126,48 +131,35 @@ canvas {
 /*----------------------------------------------------------------------------*/
 /* projects section */
 .projects-section {
-  padding: 3em 3em;
-  height: auto;
   border: 2px solid black;
 
 }
 
-.projects-section h2 {
-  padding-bottom: 1.5em;
-}
-
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-template-rows: auto;
-  grid-gap: 3em;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
 }
 
-
+.portfolio-item {
+  border: 1px solid red;
+  width: 100%;
+}
 
 
 
 
 @media only screen and (max-width: 500px) {
   .projects-section {
-    padding: 5em 3em;
     background-color: white;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 
 }
 
 @media only screen and (max-width: 1228px) {
-  .projects-section {
-    padding: 3em 4em 0em 4em;
-  }
+
 }
 
 /*----------------------------------------------------------------------------*/
@@ -178,7 +170,6 @@ canvas {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 24vw;
 }
 
 .contact-links {
