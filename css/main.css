@@ -123,10 +123,6 @@ canvas {
   .welcome-sub {
     line-height: 1.3;
   }
-
-  canvas {
-    /* display: none; */
-  }
 }
 
 /*----------------------------------------------------------------------------*/
@@ -194,10 +190,6 @@ i {
 }
 
 @media only screen and (max-width: 500px) {
-  .contact-section {
-    margin-top: 65em;
-  }
-
   i {
     font-size: 1.5em;
   }
@@ -207,12 +199,5 @@ i {
     font-size: 1em;
     margin-top: 1em;
     padding: 1em 3em;
-  }
-
-}
-
-@media only screen and (max-width: 1228px) {
-  .contact-section {
-    margin-top: 2em;
   }
 }
