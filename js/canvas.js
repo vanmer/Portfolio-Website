@@ -44,7 +44,7 @@ var mouse = {
   y: undefined
 }
 
-var circleAmount = 800;
+var circleAmount = 500;
 var maxRadius = 40;
 var minRadius = 5;
 
