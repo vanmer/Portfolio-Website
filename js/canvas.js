@@ -5,40 +5,6 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-// rectangle
-// c.fillStyle = "rgba(255, 0, 0, 0.5)";
-// c.fillRect(100, 100, 100, 100);
-// c.fillStyle = "rgba(0, 0, 255, 0.5)";
-// c.fillRect(400, 200, 100, 100);
-// c.fillStyle = "rgba(0, 255, 0, 0.5)";
-// c.fillRect(300, 400, 100, 100);
-// console.log(canvas);
-
-// line
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(400, 300);
-// c.strokeStyle = "#fa43a3";
-// c.stroke();
-
-// arc / circle
-// c.beginPath();
-// c.arc(300, 300, 30, 0, Math.PI * 2, false);
-// c.strokeStyle = 'blue';
-// c.stroke();
-
-// for (var i = 0; i < 100; i++) {
-//   var x = Math.random() * window.innerWidth;
-//   var y = Math.random() * window.innerHeight;
-//   var color = ["red", "blue", "yellow", "black", "grey", "green", "orange"];
-//   var strokeStyle = color[Math.floor(Math.random() * color.length)];
-//   c.beginPath();
-//   c.arc(x, y, 30, 0, Math.PI * 2, false);
-//   c.strokeStyle = strokeStyle;
-//   c.stroke();
-// }
-
 var mouse = {
   x: undefined,
   y: undefined
@@ -137,7 +103,6 @@ function animate() {
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
-
 }
 
 animate();
