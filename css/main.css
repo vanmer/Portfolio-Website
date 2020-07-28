@@ -237,10 +237,15 @@ i {
     font-size: 2.4em;
   }
 
+  .contact-head {
+    font-size: 1.5em;
+    padding: 0.3em;
+  }
+
   .contact-section p {
     text-align: center;
     font-size: 1em;
-    margin-top: 1em;
-    padding: 1em 3em;
+    line-height: 1.4;
+    padding: 1em 2em;
   }
 }
