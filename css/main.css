@@ -137,7 +137,6 @@ canvas {
 }
 
 .portfolio-item:hover {
-  border: 3px solid black;
   cursor: pointer;
 }
 
@@ -180,7 +179,7 @@ canvas {
 }
 
 .portfolio-item:hover .image {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .portfolio-item:hover .middle {
@@ -191,6 +190,7 @@ canvas {
   background-color: white;
   color: black;
   font-size: 16px;
+  line-height: 1.4;
   padding: 16px 32px;
   border: 2px solid black;
 }
