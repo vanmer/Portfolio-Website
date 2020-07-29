@@ -209,6 +209,8 @@ canvas {
 
 .contact-section p {
   padding: 0.7em;
+  text-align: center;
+  line-height: 1.6;
 }
 
 i {
