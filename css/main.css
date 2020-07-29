@@ -225,10 +225,10 @@ i {
 /*------------------------------ Media Queries -------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media only screen and (max-width: 500px) {
-  h1 {
+  .welcome-heading {
     font-size: 1.8em;
   }
-  h2 {
+  .welcome-sub {
     font-size: 1.5em;
   }
   .welcome-content {
