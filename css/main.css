@@ -1,6 +1,8 @@
 /*----------------------------------------------------------------------------*/
 /*----------------------------- Global Settings ------------------------------*/
 /*----------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,8 @@ html {
 
 body {
   position: relative;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -85,13 +88,29 @@ nav a:hover {
   padding-left: 4em;
 }
 
-.welcome-heading {
-  margin-top: -3em;
+.text-block {
+  max-width: 800px;
+  padding: 0.5em 0;
+  margin-left: 0.4rem;
+}
+
+h1, h2 {
+  display: inline;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  line-height: 1.1;
+  padding: 0 0.2em;
+  box-shadow: 7px 0 0 black, -7px 0 0 black;
+}
+.text-block h1 {
+  font-size: 3em;
 }
 
 .welcome-sub {
-  margin-top: 1em;
   align-items: center;
+  font-size: 2.2em;
+  line-height: 1.2;
 }
 
 .hero {
@@ -207,6 +226,7 @@ canvas {
   font-weight: 500;
   padding: 0.5em;
   font-size: 1.5em;
+  margin: 1em 0;
 }
 
 .contact-section p {
@@ -216,30 +236,31 @@ canvas {
 }
 
 i {
-  color: black;
-  font-size: 3.2em;
+  color: rgb(160, 160, 160);
+  font-size: 3em;
   padding: 0.2em 0.4em;
   margin-top: 0.1em;
   margin-bottom: 0.4em;
 }
 
+i:hover {
+  color: black;
+}
+
 /*----------------------------------------------------------------------------*/
 /*------------------------------ Media Queries -------------------------------*/
 /*----------------------------------------------------------------------------*/
-@media only screen and (max-width: 500px) {
-  .welcome-heading {
-    font-size: 1.8em;
-  }
+@media only screen and (orientation:portrait) and (max-width: 500px) {
   .welcome-sub {
     font-size: 1.5em;
   }
   .welcome-content {
-    margin-top: 10em;
+    margin-top: 4em;
     padding: 0 2em;
     text-align: center;
   }
   .welcome-sub {
-    line-height: 1.3;
+    line-height: 1.4;
   }
   #navbar {
     justify-content: center;
@@ -262,20 +283,36 @@ i {
   .contact-section p {
     padding: 0.3em;
   }
-}
-
-@media only screen and (orientation:portrait) and (max-width: 580px) {
   i {
     font-size: 2.4em;
   }
-  .contact-head {
-    font-size: 1.5em;
-    padding: 0.3em;
+  .text-block h1 {
+    font-size: 2em;
   }
   .contact-section p {
     text-align: center;
     font-size: 1em;
     line-height: 1.4;
     padding: 1em 2em;
+  }
+}
+
+@media only screen and (orientation:landscape) and (max-width: 780px) {
+  .welcome-sub {
+    font-size: 1.5em;
+  }
+  .welcome-content {
+    margin-top: 6em;
+    padding: 0 2em;
+    text-align: left;
+  }
+  .welcome-sub {
+    line-height: 1.5;
+  }
+  .text-block h1 {
+    font-size: 2.8em;
+  }
+  .middle {
+    opacity: 1;
   }
 }
