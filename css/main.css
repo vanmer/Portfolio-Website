@@ -116,6 +116,7 @@ canvas {
   grid-template-rows: auto;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .portfolio-item {
@@ -165,7 +166,7 @@ canvas {
 }
 
 .portfolio-item:hover .image {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .portfolio-item:hover .middle {
@@ -263,7 +264,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (orientation:portrait) and (max-width: 580px) {
   i {
     font-size: 2.4em;
   }
