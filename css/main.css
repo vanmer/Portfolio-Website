@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------*/
 /*----------------------------- Global Settings ------------------------------*/
 /*----------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -62,8 +62,8 @@ a {
 }
 
 nav a {
-  font-size: 1.5em;
-  padding: 1.2em;
+  font-size: 1.8em;
+  padding: 0.4em 1.2em;
   color: black;
 }
 
@@ -194,7 +194,7 @@ canvas {
 
 .text {
   background-color: white;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
   font-size: 1em;
   line-height: 1.6;
@@ -265,6 +265,11 @@ i:hover {
   #navbar {
     justify-content: center;
   }
+  nav a {
+    font-size: 1.7em;
+    padding: 0.5em 0.9em;
+    color: black;
+  }
   .portfolio-item {
     width: 100vw;
   }
@@ -289,11 +294,14 @@ i:hover {
   .text-block h1 {
     font-size: 2em;
   }
+  .contact-head {
+    margin: 0.5em 0 0.2em 0;
+  }
   .contact-section p {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
-    padding: 1em 2em;
+    padding: 1em 1em;
   }
 }
 
