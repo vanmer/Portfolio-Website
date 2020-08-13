@@ -107,13 +107,13 @@ h1, h2 {
   padding: 0 0.2em;
   box-shadow: 7px 0 0 var(--primary-color), -7px 0 0 var(--primary-color);
 }
-.text-block h1 {
-  font-size: 3em;
+.welcome-heading {
+  font-size: 3.2em;
 }
 
 .welcome-sub {
   align-items: center;
-  font-size: 2.2em;
+  font-size: 2.3em;
   line-height: 1.2;
 }
 
@@ -253,15 +253,16 @@ i:hover {
 /*------------------------------ Media Queries -------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media only screen and (orientation:portrait) and (max-width: 500px) {
-  .welcome-sub {
-    font-size: 1.5em;
-  }
   .welcome-content {
     margin-top: 4em;
     padding: 0 2em;
     text-align: center;
   }
+  .welcome-heading {
+    font-size: 2em;
+  }
   .welcome-sub {
+    font-size: 1.5em;
     line-height: 1.4;
   }
   #navbar {
@@ -289,9 +290,6 @@ i:hover {
   i {
     font-size: 2.4em;
   }
-  .text-block h1 {
-    font-size: 2em;
-  }
   .contact-head {
     margin: 0.5em 0 0.2em 0;
   }
@@ -304,11 +302,11 @@ i:hover {
 
 @media only screen and (orientation:landscape) and (max-width: 780px) {
   .welcome-sub {
-    font-size: 1.5em;
+    font-size: 2.2em;
   }
   .welcome-content {
     margin-top: 6em;
-    padding: 0 2em;
+    padding-left: 1.2em;
     text-align: left;
   }
   .welcome-sub {
