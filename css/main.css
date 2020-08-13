@@ -144,6 +144,8 @@ canvas {
 
 .portfolio-item {
   display: grid;
+  position: relative;
+  width: 100%;
 }
 
 .portfolio-item:hover {
@@ -161,11 +163,6 @@ canvas {
 
 .portfolio-item > a {
   position: relative;
-}
-
-.portfolio-item {
-  position: relative;
-  width: 100%;
 }
 
 .image {
