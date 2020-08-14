@@ -320,13 +320,12 @@ canvas {
   .contact-section p {
     font-size: 1.2em;
     text-align: center;
-    line-height: 1.3;
+    line-height: 1.5;
     padding: 1em 1em;
   }
   .contact-section i {
     color: var(--primary-color);
     font-size: 2.9em;
-    /* padding: 0.2em 0.4em; */
   }
 }
 
