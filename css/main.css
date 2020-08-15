@@ -222,7 +222,8 @@ canvas {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  padding-bottom: 1em;
+  padding: 0.8em;
+  margin-bottom: 0.2em;
 }
 
 .contact-head {
