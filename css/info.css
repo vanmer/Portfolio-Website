@@ -114,6 +114,8 @@ a {
   display: grid;
   position: relative;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .portfolio-item:hover {
@@ -182,24 +184,13 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
-  #wrapper {
-    padding: 0 4em;
-  }
-  .project-desc {
-    font-size: 1.4em;
-  }
-  .project-name {
-    margin-bottom: 0;
-  }
-}
 
-@media (max-width: 1025px) {
+@media (max-width: 1300px) {
   #wrapper {
-    padding: 0 2em;
+    padding: 0 5em;
   }
   .project-name {
-    font-size: 2.8em;
+    font-size: 2.6em;
   }
   .project-desc {
     font-size: 1.6em;
@@ -216,6 +207,24 @@ a {
     order: 2;
     padding: 1em 3em 3em 4em;
     margin-left: 1.5em;
+  }
+}
+
+@media (max-width: 880px) {
+  #wrapper {
+    padding: 0 2em;
+  }
+  .project-name {
+    font-size: 2.3em;
+  }
+}
+
+@media (max-width: 770px) {
+  #wrapper {
+    padding: 0 1em;
+  }
+  .project-name {
+    font-size: 2em;
   }
 }
 
