@@ -70,10 +70,10 @@ a {
 }
 
 .project-info {
-  grid-column: 2 / 5;
+  grid-column: 3 / 8;
   display: flex;
   flex-direction: column;
-  padding: 4em 5em;
+  margin: 4em 0 5em 0;
   order: 3;
 }
 
@@ -81,7 +81,6 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 1.4em;
-  max-width: 280px;
 }
 
 .project-info p {
@@ -183,7 +182,7 @@ a {
   order: 2;
   width: 100%;
   height: auto;
-  margin: 2em 0 0 -1em;
+  margin: 2em 0 -1em 0;
   padding: 4em 0 0 0;
 }
 
@@ -209,11 +208,6 @@ a {
   .project-name {
     font-size: 2.6em;
   }
-  .project-desc {
-    font-size: 1.6em;
-    width: 380px;
-    max-width: 380px;
-  }
 }
 
 @media (max-width: 1030px) {
@@ -233,7 +227,7 @@ a {
     font-size: 2em;
   }
   .project-info {
-    grid-column: 2 / 7;
+    grid-column: 3 / 7;
   }
 }
 
@@ -250,11 +244,10 @@ a {
     width: 85%;
   }
   .project-desc {
-    font-size: 1.3em;
-    max-width: 280px;
+    font-size: 1.2em;
   }
   .project-info {
-    grid-column: 2 / 4;
+    grid-column: 2 / 8;
   }
   .middle {
     opacity: 1;
