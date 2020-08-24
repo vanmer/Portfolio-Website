@@ -273,7 +273,11 @@ canvas {
     line-height: 1.5;
   }
   .text-block h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
+  }
+  .text-block h2 {
+    font-size: 1.8em;
+    line-height: 1.2;
   }
   .middle {
     opacity: 1;
