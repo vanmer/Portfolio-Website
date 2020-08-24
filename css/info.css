@@ -74,7 +74,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 4em 5em;
-  order: 2;
+  order: 3;
 }
 
 .project-desc {
@@ -180,6 +180,7 @@ a {
 
 .mockup {
   grid-column: span 8;
+  order: 2;
   width: 100%;
   height: auto;
   margin: 2em 0 0 -1em;
