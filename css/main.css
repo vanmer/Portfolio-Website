@@ -110,6 +110,7 @@ h1, h2 {
 }
 .welcome-heading {
   font-size: 3.2em;
+  line-height: 1.2;
 }
 
 .welcome-sub {
