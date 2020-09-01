@@ -11,7 +11,8 @@
   box-sizing: inherit;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -21,11 +22,10 @@ html {
 
 body {
   position: relative;
-  font-family: 'Barlow', Helvetica, sans-serif;
+  font-family: "Barlow", Helvetica, sans-serif;
   font-weight: 500;
   background-color: var(--secondary-color);
 }
-
 
 a {
   text-decoration: none;
@@ -36,39 +36,39 @@ a {
 }
 
 .about-header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5em;
-    padding: 1em 0 1.5em 0;
-    margin-bottom: 0.5em;
-    text-align: center;
-    line-height: 1;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  padding: 1em 0 1.5em 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+  line-height: 1;
 }
 
 .about-section {
-    width: 600px;
-    margin: 0 auto;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .about-info {
-    font-size: 1.7em;
+  font-size: 1.7em;
 }
 
 .about-info p {
-    margin-bottom: 1.1em;
+  margin-bottom: 1.1em;
 }
 
 .contact-section {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.7em;
-    max-width: 280px;
-  }
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7em;
+  max-width: 280px;
+}
 
 .mail {
-    color: var(--third-color);
+  color: var(--third-color);
 }
 
 .mail:hover {
@@ -76,38 +76,8 @@ a {
 }
 
 .go-back {
-    margin: 3em 0 2em 0;
-    color: var(--primary-color);
-  }
-
-/*----------------------------------------------------------------------------*/
-/*------------------------------ Media Queries -------------------------------*/
-/*----------------------------------------------------------------------------*/
-
-@media (max-width: 800px) {
-  #wrapper {
-    padding: 0;
-  }
+  margin: 3em 0 2em 0;
+  color: var(--primary-color);
 }
 
-@media (max-width: 700px) {
-  .about-section {
-    width: 400px;
-  }
-  .about-info {
-    font-size: 1.6em;
-  }
-}
-
-@media (max-width: 500px) {
-  .about-header {
-    font-size: 2em;
-    margin: 0;
-  }
-  .about-section {
-    width: 280px;
-  }
-  .about-info {
-    font-size: 1.5em;
-  }
-}
+@import "media-about";
