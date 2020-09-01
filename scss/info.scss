@@ -87,7 +87,7 @@ a {
 .github {
   line-height: 1.2;
   margin-top: 1.5em;
-  color: var(--fourth-color);
+  color: $fourth-color;
 }
 
 .github:hover {
@@ -97,7 +97,7 @@ a {
 .go-back {
   line-height: 1.2;
   margin-top: 3em;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .project-info h2 {
@@ -160,13 +160,13 @@ a {
 }
 
 .text {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   font-weight: 700;
-  color: var(--primary-color);
+  color: $primary-color;
   font-size: 1em;
   line-height: 1.6;
   padding: 1em 2em;
-  border: 2px solid var(--primary-color);
+  border: 2px solid $primary-color;
 }
 
 .mockup {
