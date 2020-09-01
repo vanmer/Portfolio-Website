@@ -22,7 +22,7 @@ html {
 
 body {
   position: relative;
-  font-family: "Barlow", Helvetica, sans-serif;
+  font-family: $font-stack;
   font-weight: 500;
   background-color: var(--secondary-color);
 }
