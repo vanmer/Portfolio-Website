@@ -24,7 +24,8 @@ body {
   position: relative;
   font-family: $font-stack;
   font-weight: 500;
-  background-color: var(--secondary-color);
+  color: $primary-color;
+  background-color: $secondary-color;
 }
 
 a {
@@ -35,29 +36,31 @@ a {
   padding: 0 2em;
 }
 
-.about-header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5em;
-  padding: 1em 0 1.5em 0;
-  margin-bottom: 0.5em;
-  text-align: center;
-  line-height: 1;
-}
+.container {
+  .about-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    padding: 1em 0 1.5em 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+    line-height: 1;
+  }
 
-.about-section {
-  width: 600px;
-  margin: 0 auto;
-}
+  .about-section {
+    width: 600px;
+    margin: 0 auto;
 
-.about-info {
-  font-size: 1.7em;
-}
+    .about-info {
+      font-size: 1.7em;
 
-.about-info p {
-  margin-bottom: 1.1em;
+      p {
+        margin-bottom: 1.1em;
+      }
+    }
+  }
 }
 
 .contact-section {
@@ -65,19 +68,19 @@ a {
   flex-direction: column;
   font-size: 1.7em;
   max-width: 280px;
-}
 
-.mail {
-  color: var(--fourth-color);
-}
+  .mail {
+    color: $fourth-color;
+  }
 
-.mail:hover {
-  text-decoration: line-through;
-}
+  .mail:hover {
+    text-decoration: line-through;
+  }
 
-.go-back {
-  margin: 3em 0 2em 0;
-  color: var(--primary-color);
+  .go-back {
+    margin: 3em 0 2em 0;
+    color: $primary-color;
+  }
 }
 
 @import "media-about";
