@@ -87,7 +87,7 @@ a {
 .github {
   line-height: 1.2;
   margin-top: 1.5em;
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 .github:hover {
@@ -182,72 +182,4 @@ a {
   padding: 1em 0;
 }
 
-/*----------------------------------------------------------------------------*/
-/*-------------------------------- Media Queries -----------------------------*/
-/*----------------------------------------------------------------------------*/
-
-@media (max-width: 1400px) {
-  #wrapper {
-    padding: 0 8em;
-  }
-}
-
-
-@media (max-width: 1300px) {
-  #wrapper {
-    padding: 0 5em;
-  }
-  .project-name {
-    font-size: 2.6em;
-  }
-}
-
-@media (max-width: 1030px) {
-  #wrapper {
-    padding: 0;
-  }
-  .project-name {
-    font-size: 2.3em;
-  }
-}
-
-@media (max-width: 770px) {
-  #wrapper {
-    padding: 0;
-  }
-  .project-name {
-    font-size: 2em;
-  }
-  .project-info {
-    grid-column: 3 / 7;
-  }
-}
-
-@media only screen and (orientation:portrait) and (max-width: 500px) {
-  #wrapper {
-    padding: 0;
-  }
-  .project-name {
-    width: 100%;
-    font-size: 1.2em;
-    padding: 1.2em 0 1em 0;
-  }
-  .project-title {
-    width: 85%;
-  }
-  .project-desc {
-    font-size: 1.2em;
-  }
-  .project-info {
-    grid-column: 2 / 8;
-  }
-  .middle {
-    opacity: 1;
-  }
-  .mockup {
-    padding: 1em 0;
-  }
-  .mockup-item {
-    padding: 1em 0;
-  }
-}
+@import "media-info";
