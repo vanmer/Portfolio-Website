@@ -131,10 +131,10 @@ h2 {
   display: grid;
   position: relative;
   width: 100%;
-}
 
-.portfolio-item:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .portfolio-item > a > img {
@@ -189,9 +189,6 @@ h2 {
   border: 2px solid $primary-color;
 }
 
-/*----------------------------------------------------------------------------*/
-/*----------------------------- Contact Section ------------------------------*/
-/*----------------------------------------------------------------------------*/
 .contact-section {
   display: flex;
   flex-direction: column;
