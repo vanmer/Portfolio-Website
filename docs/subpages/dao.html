@@ -5,75 +5,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://use.fontawesome.com/de50a042e8.js"></script>
-    <link rel="stylesheet" href="../css/info.min.css" />
-    <title>Hindsight – Responsive Login Page</title>
+    <link rel="stylesheet" href="../css/info-ui.min.css" />
+    <title>Dao Interior - UI Design</title>
   </head>
   <body>
     <div id="wrapper">
       <div class="project-name">
-        <h1 class="project-title">Hindsight</h1>
+        <h1 class="project-title">Dao Interior - UI-Design</h1>
       </div>
 
       <div class="projects-grid">
         <div class="project-info">
           <div class="project-desc">
             <h2 class="info">Project Info</h2>
-            <p>This is a login page of the fictional brand Hindsight</p>
+            <p>This is the UI-Design of the fictional Studio Dao Interior.</p>
             <p>
-              The site was built with CSS Flexbox and is fully responsive for
-              all devices.
+              It has been designed and prototyped using Figma and has each a
+              unique design for desktop, tablet and mobile devices.
             </p>
-            <a
-              href="https://github.com/vanmer/Hindsight-LoginPage"
-              class="github"
-              >Github Repository</a
-            >
             <a href="../index.html" class="go-back"
               ><i class="fa fa-chevron-left"></i> Go Back</a
             >
           </div>
         </div>
 
-        <div class="mockup">
-          <img
-            src="../img/hindsight-mockup-macbook.png"
-            alt="nelson-macbook-mockup"
-            class="image mockup-item"
-          />
-          <img
-            src="../img/hindsight-mockup-ipad.png"
-            alt="nelson-ipad"
-            class="image mockup-item"
-          />
-          <img
-            src="../img/hindsight-mockup-iphone.png"
-            alt="nelson-iphone"
-            class="image mockup-item"
-          />
-        </div>
-
-        <div class="ui-design">
-            <div class="desktop">
-
+        <div class="carousel-section">
+          <div class="desktop-carousel">
+            <div class="carousel">
+              <button class="carousel__button carousel__button--left is-hidden">
+                <i class="fa fa-angle-left"></i>
+              </button>
+              <div class="carousel__track-container">
+                <ul class="carousel__track">
+                  <li class="carousel__slide current-slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-landing.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-livingroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-kitchen.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-bedroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-bathroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-garden.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide">
+                    <img
+                      class="carousel__image"
+                      src="../img/dao-imac-contact.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <button class="carousel__button carousel__button--right">
+                <i class="fa fa-angle-right"></i>
+              </button>
             </div>
-            <div class="tablet">
-
+            <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator"></button>
             </div>
-            <div class="mobile">
-
+          </div>
+      
+          <div class="tablet-carousel">
+            <div class="carousel2">
+              <button class="carousel__button2 carousel__button2--left is-hidden2">
+                <i class="fa fa-angle-left"></i>
+              </button>
+              <div class="carousel__track-container2">
+                <ul class="carousel__track2">
+                  <li class="carousel__slide2 current-slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-landing.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-livingroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-kitchen.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-bedroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-bathroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-garden.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide2">
+                    <img
+                      class="carousel__image2"
+                      src="../img/dao-ipad-contact.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <button class="carousel__button2 carousel__button2--right">
+                <i class="fa fa-angle-right"></i>
+              </button>
             </div>
-        </div>
-
-        <div class="style-guide">
-            <div class="typeface">
-
+            <div class="carousel__nav2">
+              <button class="carousel__indicator2 current-slide2"></button>
+              <button class="carousel__indicator2"></button>
+              <button class="carousel__indicator2"></button>
+              <button class="carousel__indicator2"></button>
+              <button class="carousel__indicator2"></button>
+              <button class="carousel__indicator2"></button>
+              <button class="carousel__indicator2"></button>
             </div>
-            <div class="colors">
-                
+          </div>
+      
+          <div class="mobile-carousel">
+            <div class="carousel3">
+              <button class="carousel__button3 carousel__button3--left is-hidden3">
+                <i class="fa fa-angle-left"></i>
+              </button>
+              <div class="carousel__track-container3">
+                <ul class="carousel__track3">
+                  <li class="carousel__slide3 current-slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-landing.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-livingroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-kitchen.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-bedroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-bathroom.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-garden.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="carousel__slide3">
+                    <img
+                      class="carousel__image3"
+                      src="../img/dao-iphone-contact.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <button class="carousel__button3 carousel__button3--right">
+                <i class="fa fa-angle-right"></i>
+              </button>
             </div>
+            <div class="carousel__nav3">
+              <button class="carousel__indicator3 current-slide3"></button>
+              <button class="carousel__indicator3"></button>
+              <button class="carousel__indicator3"></button>
+              <button class="carousel__indicator3"></button>
+              <button class="carousel__indicator3"></button>
+              <button class="carousel__indicator3"></button>
+              <button class="carousel__indicator3"></button>
+            </div>
+          </div>
         </div>
 
       </div>
-    </div>
+    <script src="../js/carousel1.js"></script>
+    <script src="../js/carousel2.js"></script>
+    <script src="../js/carousel3.js"></script>
   </body>
 </html>
