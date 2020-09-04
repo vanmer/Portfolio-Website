@@ -35,7 +35,8 @@ a {
 }
 
 .border {
-  border: 1px solid $primary-color;
+  outline: 4px solid $primary-color;
+  outline-offset: -4px;
 }
 
 .image {
