@@ -91,39 +91,6 @@
   display: none;
 }
 
-@media (max-width: 770px) {
-  .desktop-carousel .carousel,
-  .tablet-carousel .carousel2,
-  .mobile-carousel .carousel3 {
-    height: 500px;
-  }
-  .desktop-carousel .carousel__nav,
-  .tablet-carousel .carousel__nav2,
-  .mobile-carousel .carousel__nav3 {
-    visibility: hidden;
-    padding: 0;
-  }
-}
 
-@media (max-width: 500px) {
-  .desktop-carousel .carousel,
-  .tablet-carousel .carousel2,
-  .mobile-carousel .carousel3 {
-    height: 270px;
-  }
-  // .carousel__button {
 
-  // }
-  // .carousel__button i {
-  //   font-size: 3.5rem;
-  // }
-  
-  // .carousel__button--left {
-  //   z-index: 2;
-  //   left: 6%;
-  // }
-  
-  // .carousel__button--right {
-  //   right: 6%;
-  // }
-}
+@import "media-carousel";
