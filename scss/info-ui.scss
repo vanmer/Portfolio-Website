@@ -129,6 +129,13 @@ a {
     }
   }
 
+  .presentation-section {
+    grid-column: span 8;
+    width: 100%;
+    height: auto;
+    padding: 0 0 3rem 0;
+  }
+
   .mockup {
     grid-column: span 8;
     order: 2;
