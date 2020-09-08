@@ -49,6 +49,11 @@ a {
   object-fit: cover;
 }
 
+.video {
+  object-fit: fill;
+  width: 100%;
+}
+
 .text {
   background-color: $secondary-color;
   font-weight: 700;
@@ -143,11 +148,11 @@ a {
     order: 2;
     width: 100%;
     height: auto;
-    margin: 2em 0 -1em 0;
+    margin: 0 0 -1em 0;
     padding: 4em 0 0 0;
 
     &-item {
-      padding: 2rem 0;
+      padding: 2.5rem 0;
     }
   }
 
