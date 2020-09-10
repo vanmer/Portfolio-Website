@@ -63,7 +63,15 @@
   .projects-grid .mockup {
     padding: 1.5rem 0;
   }
-  .mockup-item {
-    padding: 1rem 0;
+  .projects-grid .mockup-item {
+    padding: 0.75rem 0;
+
+    .fallback-img {
+      display: inline-block;
+    }
   }
+  .video {
+    display: none;
+  }
+  
 }

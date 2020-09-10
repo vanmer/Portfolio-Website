@@ -156,6 +156,10 @@ a {
     }
   }
 
+  .fallback-img {
+    display: none;
+  }
+
   .portfolio-item {
     grid-column: span 8;
     display: grid;
