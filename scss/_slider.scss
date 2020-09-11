@@ -1,0 +1,29 @@
+.glide-item {
+    background: #fff;
+    display: block;
+    width: 100%;
+}
+
+.glider-next,
+.glider-prev {
+    color: black;
+    top: 42%;
+}
+
+.glider-next {
+    right: 7%;
+}
+.glider-prev {
+    left: 7%;
+}
+
+.glider-next:focus,
+.glider-next:hover,
+.glider-prev:focus,
+.glider-prev:hover {
+  color: #474747;
+}
+
+.glider-dot.active {
+    background: black;
+}
