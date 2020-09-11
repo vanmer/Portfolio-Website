@@ -30,10 +30,16 @@
 
 .glider {
     scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.glider::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
 }
 
 .glider-dots {
-    margin-top: 1.5rem;
+    margin: 1.2rem 0 3.5rem 0;
 }
 
 @media (max-width: 500px) {
