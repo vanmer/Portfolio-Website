@@ -7,7 +7,7 @@
 .glider-next,
 .glider-prev {
     color: black;
-    top: 42%;
+    top: 40%;
 }
 
 .glider-next {
@@ -31,3 +31,14 @@
 .glider {
     scrollbar-width: none;
 }
+
+.glider-dots {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .glider-dots {
+        display: none;
+    }
+}
+
