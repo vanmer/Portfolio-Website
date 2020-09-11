@@ -58,9 +58,9 @@ a {
   background-color: $secondary-color;
   font-weight: 700;
   color: $primary-color;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.6;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   border: 2px solid $primary-color;
 }
 
@@ -80,7 +80,7 @@ a {
   width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: 2.7em;
+  font-size: 2.7rem;
   padding: 3rem 0 3rem 0;
   text-align: center;
   line-height: 1;
@@ -103,27 +103,28 @@ a {
     grid-column: 2 / 8;
     display: flex;
     flex-direction: column;
-    margin: 4em 0 5em 0;
+    margin: 4rem 0 5rem 0;
     order: 3;
 
     p {
-      line-height: 1.2;
-      margin-top: 0.8em;
+      line-height: 1.4;
+      margin-top: 1.1rem;
     }
 
     .project-desc {
       display: flex;
       flex-direction: column;
-      font-size: 1.4em;
+      font-size: 1.4rem;
 
       .info {
-        font-size: 1.1em;
+        font-size: 1.6rem;
         width: 100%;
+        padding-bottom: 0.5rem;
       }
 
       .github {
         line-height: 1.2;
-        margin-top: 1.5em;
+        margin-top: 2.3rem;
         color: $fourth-color;
 
         &:hover {
