@@ -1,15 +1,15 @@
 @media (max-width: 1400px) {
   #wrapper {
-    padding: 0 8em;
+    padding: 0 8rem;
   }
 }
 
 @media (max-width: 1300px) {
   #wrapper {
-    padding: 0 5em;
+    padding: 0 5rem;
   }
-  .project-name {
-    font-size: 2.6em;
+  .project-name .project-title {
+    font-size: 4rem;
   }
 }
 
@@ -17,8 +17,8 @@
   #wrapper {
     padding: 0;
   }
-  .project-name {
-    font-size: 2.3em;
+  .project-name .project-title {
+    font-size: 3.8rem;
   }
 }
 
@@ -26,15 +26,11 @@
   #wrapper {
     padding: 0;
   }
-  .project-name {
-    font-size: 2em;
-  }
   .project-info {
     grid-column: 3 / 7;
   }
-  .project-title {
-    margin-top: 2rem;
-    font-size: 1.9em;
+  .project-name .project-title {
+    font-size: 3.2rem;
   }
 }
 
