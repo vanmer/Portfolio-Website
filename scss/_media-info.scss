@@ -48,7 +48,7 @@
       font-size: 2rem;
     }
   }
-  
+
   .project-desc {
     font-size: 1.2em;
   }
@@ -71,12 +71,10 @@
   .video {
     display: none;
   }
-  
   .projects-grid .style-guide .image-desktop {
-      display: none;
-    }
-    .projects-grid .style-guide .image-mobile {
-      display: block;
-    }
-  
+    display: none;
+  }
+  .projects-grid .style-guide .image-mobile {
+    display: block;
+  }
 }
