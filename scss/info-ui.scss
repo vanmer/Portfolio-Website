@@ -131,11 +131,20 @@ a {
 
       .go-back {
         line-height: 1.2;
-        margin-top: 3rem;
+        margin-top: 4rem;
         color: $primary-color;
+        border: 3px solid $primary-color;
+        width: 7rem;
+        padding: 0.5rem;
+
+        i {
+          margin-right: 0.4rem;
+        }
 
         &:hover {
-          color: $fifth-color;
+          color: $secondary-color;
+          background: $fourth-color;
+          border-color: $fourth-color;
         }
       }
     }
