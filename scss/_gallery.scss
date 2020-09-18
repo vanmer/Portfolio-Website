@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    grid-gap: 1rem 1rem;
+    grid-gap: 0.5rem 0.5rem;
     margin: 0 1rem;
 }
 
@@ -10,7 +10,7 @@
     transition: 1s;
     // padding: 1rem;
     align-self: center;
-    justify-self: space-between;
+    justify-self: center;
     width: 300px;
 }
 
@@ -18,3 +18,4 @@
     filter: grayscale(100%);
     // transform: scale(1.05);
 }
+
