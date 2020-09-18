@@ -1,5 +1,6 @@
 @import "config";
 @import "slider";
+@import "gallery";
 
 * {
   margin: 0;
@@ -221,6 +222,14 @@ a {
   grid-column: span 8;
   width: 100%;
   height: auto;
+}
+
+.gallery-section {
+  grid-column: span 8;
+  order: 5;
+  width: 100%;
+  height: auto;
+  padding: 0 0 3rem 0;
 }
 
 @import "media-info-ui";

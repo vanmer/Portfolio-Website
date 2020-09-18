@@ -1,0 +1,17 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem 1rem;
+    margin: 0 auto;
+}
+
+.gallery img {
+    transition: 1s;
+    // padding: 1rem;
+    width: 300px;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    // transform: scale(1.05);
+}
