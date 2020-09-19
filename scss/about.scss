@@ -33,7 +33,7 @@ a {
 }
 
 #wrapper {
-  padding: 0 2em;
+  padding: 0 2rem;
 }
 
 .container {
@@ -42,9 +42,9 @@ a {
     width: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 2.5em;
-    padding: 1em 0 1.5em 0;
-    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 2rem;
     text-align: center;
     line-height: 1;
   }
@@ -66,20 +66,35 @@ a {
 .contact-section {
   display: flex;
   flex-direction: column;
-  font-size: 1.7em;
-  max-width: 280px;
+  font-size: 1.4rem;
 
   .mail {
     color: $fourth-color;
-  }
+    font-size: 1.6rem;
 
-  .mail:hover {
-    text-decoration: line-through;
+    &:hover {
+      text-decoration: line-through;
+    }
   }
 
   .go-back {
-    margin: 3em 0 2em 0;
+    line-height: 1.2;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     color: $primary-color;
+    border: 3px solid $primary-color;
+    width: 7rem;
+    padding: 0.5rem;
+
+    i {
+      margin-right: 0.4rem;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      background: $fourth-color;
+      border-color: $fourth-color;
+    }
   }
 }
 
