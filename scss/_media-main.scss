@@ -1,6 +1,18 @@
+@media (max-width: 1400px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .middle {
+    width: 24rem;
+  }
+}
+
 @media (max-width: 1025px) {
   .welcome-content {
     padding-left: 2em;
+  }
+  .middle {
+    width: 22rem;
   }
 }
 
@@ -25,6 +37,9 @@
   }
   .middle {
     opacity: 1;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
 
