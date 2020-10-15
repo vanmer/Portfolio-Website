@@ -11,5 +11,9 @@
     i {
       margin-right: 0.7rem;
     }
+
+    &:hover {
+      text-decoration: line-through;
+    }
   }
 }
