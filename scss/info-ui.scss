@@ -1,6 +1,7 @@
 @import "config";
 @import "slider";
 @import "gallery";
+@import "close";
 
 * {
   margin: 0;
@@ -87,7 +88,7 @@ a {
   line-height: 1;
 
   .project-title {
-    width: 85%;
+    width: 70%;
     margin: auto 0;
   }
 }
