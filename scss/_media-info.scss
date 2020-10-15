@@ -24,6 +24,11 @@
       font-size: 3.5rem;
     }
   }
+  .footer {
+    .home {
+      margin-left: 2rem;
+    }
+  }
 }
 
 @media (max-width: 770px) {
@@ -48,7 +53,7 @@
     line-height: 1.2;
 
     .project-title {
-      font-size: 1.8rem;
+      font-size: 2rem;
       width: 60%;
     }
   }

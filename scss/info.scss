@@ -1,4 +1,5 @@
 @import "config";
+@import "close";
 
 * {
   margin: 0;
@@ -196,15 +197,16 @@ a {
     overflow: hidden;
     max-width: 100%;
   }
+
   .video-responsive iframe,
   .video-responsive object,
   .video-responsive embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   .fallback-img {
     display: none;
@@ -257,5 +259,21 @@ a {
     }
   }
 }
+
+.footer {
+  border-top: 1px solid $primary-color;
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+ 
+  .home {
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-weight: 500;
+ 
+    i {
+     margin-right: 0.7rem;
+   }
+  }
+ }
 
 @import "media-info";
