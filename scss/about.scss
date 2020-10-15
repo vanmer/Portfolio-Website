@@ -1,4 +1,6 @@
 @import "config";
+@import "close";
+@import "footer-back";
 
 * {
   margin: 0;
@@ -51,7 +53,7 @@ a {
 
   .about-section {
     width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
 
     .about-info {
       font-size: 1.7em;
