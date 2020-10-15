@@ -2,6 +2,7 @@
 @import "slider";
 @import "gallery";
 @import "close";
+@import "footer-back";
 
 * {
   margin: 0;
@@ -238,23 +239,7 @@ a {
   width: 100%;
   height: auto;
   padding: 0 0 3rem 0;
-  margin: 0 auto;
-}
-
-.footer {
- border-top: 1px solid $primary-color;
- padding: 1rem 1rem;
- margin-bottom: 1.5rem;
-
- .home {
-   font-size: 1.5rem;
-   color: $primary-color;
-   font-weight: 500;
-
-   i {
-    margin-right: 0.7rem;
-  }
- }
+  margin: 0 auto 2rem auto;
 }
 
 @import "media-info-ui";
