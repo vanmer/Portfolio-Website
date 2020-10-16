@@ -45,6 +45,15 @@
         <div class="projects-grid">
 
           <div class="portfolio-item">
+            <a href="subpages/decadent-coloring-book.html">
+              <img src="" name="slide" class="image">
+              <div class="middle">
+                <div class="text">The Decadent Coloring Book</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio-item">
             <a href="subpages/dao.html">
               <img src="img/dao.png" class="image" alt="dao">
               <div class="middle">
@@ -98,14 +107,14 @@
             </a>
           </div>
 
-          <div class="portfolio-item">
+          <!-- <div class="portfolio-item">
             <a href="subpages/leaflovers.html">
               <img src="img/leaflovers.png" class="image" alt="leaflovers">
               <div class="middle">
                 <div class="text">leaflovers – Landing Page</div>
               </div>
             </a>
-          </div>
+          </div> -->
 
           <div class="portfolio-item">
             <a href="subpages/savetheforests.html">
@@ -130,6 +139,34 @@
   </div>
 
   <script src="js/canvas.js"></script>
+  <script>
+    // Image Slider
+    var i = 0; // Start point
+        var images = [];
+        var time = 1200; // time in ms
+
+        // Image List
+        images[0] = 'img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-003.png';
+        images[1] = 'img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-004.png';
+        images[2] = 'img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-008.png';
+        images[3] = 'img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-011.png';
+        images[4] = 'img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-012.png';
+
+        // Change Image
+        function changeImg() {
+            document.slide.src = images[i];
+
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+  </script>
 </body>
 
 </html>

@@ -107,7 +107,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 1rem 0 5rem 0;
-    order: 4;
+    order: 1;
 
     p {
       line-height: 1.3;
@@ -231,6 +231,9 @@ a {
   grid-column: span 8;
   width: 100%;
   height: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  order: 3;
 }
 
 .gallery-section {
