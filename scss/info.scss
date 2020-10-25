@@ -180,6 +180,19 @@ a {
     }
   }
 
+  .show-animation-mobile {
+    // display: none;
+    grid-column: span 8;
+    order: 2;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2rem 0;
+
+    &-item {
+      padding-bottom: 3rem;
+    }
+  }
+
   .video-embedded {
     grid-column: span 8;
     order: 2;

@@ -82,4 +82,10 @@
   .projects-grid .style-guide .image-mobile {
     display: block;
   }
+  .projects-grid .show-animation {
+    display: none;
+  }
+  .projects-grid .show-animation-mobile {
+    display: inline-grid;
+  }
 }
