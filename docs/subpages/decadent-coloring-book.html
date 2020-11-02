@@ -22,20 +22,6 @@
         </div>
 
         <div class="projects-grid">
-            <div class="project-info">
-                <div class="project-desc">
-                    <h2 class="info">Info</h2>
-                    <p>
-                        This is a coloring book dedicated to people who just can't get enough.</p>
-                    <p class="italic">
-                        Editorial<br> 24 Pages, 200mm x 185mm, 23 Illustrations
-                    </p>
-                </div>
-            </div>
-
-            <div class="presentation-section">
-                <img src="" name="slide" class="image">
-            </div>
 
             <div class="carousel-section">
                 <div class="glider-contain multiple">
@@ -111,6 +97,15 @@
                 </div>
             </div>
 
+            <div class="project-info">
+                <div class="project-desc">
+                    <p>This is a coloring book dedicated to those who think enough is never enough.</p>
+                    <p class="italic">
+                        Editorial<br> 24 Pages, 200mm x 185mm, 23 Illustrations
+                    </p>
+                </div>
+            </div>
+
         </div>
 
         <div class="footer">
@@ -133,33 +128,6 @@
                 next: '.glider-next'
             }
         });
-
-        // Image Slider
-        var i = 0; // Start point
-        var images = [];
-        var time = 1200; // time in ms
-
-        // Image List
-        images[0] = '../img/the-decadent-coloring-book-show/the-decadent-coloring-book-16-9-003.png';
-        images[1] = '../img/the-decadent-coloring-book-show/the-decadent-coloring-book-16-9-004.png';
-        images[2] = '../img/the-decadent-coloring-book-show/the-decadent-coloring-book-16-9-008.png';
-        images[3] = '../img/the-decadent-coloring-book-show/the-decadent-coloring-book-16-9-011.png';
-        images[4] = '../img/the-decadent-coloring-book-show/the-decadent-coloring-book-16-9-012.png';
-
-        // Change Image
-        function changeImg() {
-            document.slide.src = images[i];
-
-            if (i < images.length - 1) {
-                i++;
-            } else {
-                i = 0;
-            }
-
-            setTimeout("changeImg()", time);
-        }
-
-        window.onload = changeImg;
     </script>
 </body>
 

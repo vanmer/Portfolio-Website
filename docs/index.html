@@ -66,7 +66,11 @@
 
             <div class="portfolio-item">
               <a href="subpages/decadent-coloring-book.html">
-                <img src="" name="slide" class="image" alt="decadent-coloring-book"/>
+                <video autoplay loop muted class="video image">
+                  <source src="video/The-Decadent-Coloring-Book-1500-800.mp4">
+                  <img src="img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-004.png" alt="decadent-coloring-book">
+                </video>
+                <!-- <img src="" name="slide" class="image" alt="decadent-coloring-book"/> -->
                 <div class="middle">
                   <div class="text">The Decadent Coloring Book</div>
                 </div>
@@ -167,38 +171,5 @@
     </div>
 
     <script src="js/canvas.js"></script>
-    <script>
-      // Image Slider
-      var i = 0; // Start point
-      var images = [];
-      var time = 1200; // time in ms
-
-      // Image List
-      images[0] =
-        "img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-003.png";
-      images[1] =
-        "img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-004.png";
-      images[2] =
-        "img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-008.png";
-      images[3] =
-        "img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-011.png";
-      images[4] =
-        "img/the-decadent-coloring-book-thumbnail/the-decadent-coloring-book-15-8-012.png";
-
-      // Change Image
-      function changeImg() {
-        document.slide.src = images[i];
-
-        if (i < images.length - 1) {
-          i++;
-        } else {
-          i = 0;
-        }
-
-        setTimeout("changeImg()", time);
-      }
-
-      window.onload = changeImg;
-    </script>
   </body>
 </html>
