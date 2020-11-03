@@ -62,7 +62,7 @@
                     </video>
                     <img src="../img/Isometric-Typography.png" class="image fallback-img" alt="">
                 </div>
-                
+
                 <div class="show-animation-item">
                     <video controls autoplay loop muted class="animation">
                         <source src="../video/Kinetic-Typography/Simple-Shadow-Animation.mp4">
@@ -110,7 +110,7 @@
                         <source src="../video/Kinetic-Typography/Echo-Typography.mp4">
                         <img src="../img/Echo-Typography- Fallback.png" alt="">
                     </video>
-                    <img src="../img/Echo-Typography- Fallback.png"class="image fallback-img" alt="">
+                    <img src="../img/Echo-Typography- Fallback.png" class="image fallback-img" alt="">
                 </div>
 
                 <div class="show-animation-mobile-item">
@@ -118,7 +118,7 @@
                         <source src="../video/Kinetic-Typography/Isometric-Typography.mp4">
                         <img src="../img/Isometric-Typography.png" alt="">
                     </video>
-                    <img src="../img/Echo-Typography- Fallback.png"class="image fallback-img" alt="">
+                    <img src="../img/Echo-Typography- Fallback.png" class="image fallback-img" alt="">
                 </div>
 
                 <div class="show-animation-mobile-item">
@@ -144,6 +144,33 @@
             <a href="../index.html" class="home"><i class="fa fa-arrow-left"></i>Back</a>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
+        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        var tl = gsap.timeline({
+            defaults: {
+                duration: 1
+            }
+        });
+        tl.from(".project-title", {
+            y: -80,
+            stagger: 0.6,
+            opacity: 0,
+            ease: Circ. easeOut,
+            })
+          .from(".show-animation-item", {
+            stagger: 1.2,
+            opacity: 0,
+            delay: 1
+          })
+    </script>
 </body>
 
 </html>
