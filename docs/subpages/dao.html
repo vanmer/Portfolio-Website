@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/glider.min.css">
   <link rel="stylesheet" href="../css/info-ui.min.css" />
 
-  <title>Dao Interior - UI Design</title>
+  <title>Dao Interior - UI/UX Design</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="close">
       <a href="../index.html"><img src="../img/close-icon.svg" alt=""></a>
     </div>
-    
+
     <div class="project-name">
       <h1 class="project-title">Dao Interior - UI/UX-Design</h1>
     </div>
@@ -199,6 +199,38 @@
         next: '#glider-next3'
       },
     });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
+    integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    var tl = gsap.timeline({
+      defaults: {
+        duration: 1
+      }
+    });
+    tl.from(".project-title", {
+      y: -80,
+      stagger: 0.6,
+      opacity: 0,
+      ease: Circ.easeOut,
+      })
+      .from(".close", {
+            opacity: 0,
+          })
+      .from(".projects-grid", {
+        opacity: 0,
+        stagger: 0.6,
+      })
+      .from(".footer", {
+            opacity: 0
+          })
   </script>
 </body>
 
