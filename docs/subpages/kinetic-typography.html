@@ -165,10 +165,16 @@
             opacity: 0,
             ease: Circ. easeOut,
             })
+          .from(".close", {
+            opacity: 0,
+          })
           .from(".show-animation-item", {
             stagger: 1.2,
             opacity: 0,
             delay: 1
+          })
+          .from(".footer", {
+            opacity: 0
           })
     </script>
 </body>
