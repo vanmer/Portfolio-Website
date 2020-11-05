@@ -167,11 +167,13 @@
           .from(".show-animation-item", {
             stagger: 1.2,
             opacity: 0,
-            delay: 1
+            delay: 1,
+            ease: Circ.easeOut,
           })
           .from(".footer", {
-            y: 80,
-            opacity: 0
+            y: 90,
+            opacity: 0,
+            ease: Power3.easeOut,
           })
     </script>
 </body>
