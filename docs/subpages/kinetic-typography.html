@@ -170,6 +170,12 @@
             delay: 1,
             ease: Circ.easeOut,
           })
+          .from(".show-animation-mobile-item", {
+            stagger: 1.2,
+            opacity: 0,
+            delay: 1,
+            ease: Circ.easeOut,
+          },"-=10")
           .from(".footer", {
             y: 90,
             opacity: 0,
