@@ -1,3 +1,7 @@
-.cursor {
-    cursor: url("../img/cursor/cursor-blue.svg"), auto;
+body {
+    cursor: url("../img/cursor/cursor-green.png"), auto;
+}
+
+a:hover {
+    cursor: url("../img/cursor/cursor-magenta.png"), auto;
 }
