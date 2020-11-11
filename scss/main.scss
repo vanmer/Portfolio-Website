@@ -139,7 +139,7 @@ h2 {
 }
 
 .portfolio-item > a > img {
-  display: block;
+  // display: block;
   max-height: 100%;
   max-width: 100%;
   width: 100%;
@@ -189,6 +189,10 @@ h2 {
   line-height: 1.4;
   padding: 2rem 2.5rem;
   border: 4px solid $primary-color;
+}
+
+.fallback {
+  display: none;
 }
 
 .footer {
