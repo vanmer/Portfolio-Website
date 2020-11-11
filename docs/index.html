@@ -28,7 +28,7 @@
     </div>
     <!-- START WELCOLME SECTION -->
     <section id="welcome-section" class="welcome-section">
-      <div class="welcome-content">
+      <div class="welcome-content rellax" data-rellax-speed="5" data-rellax-percentage="0.5">
         <div class="text-block">
           <h1 class="welcome-heading">Hoa Van Thanh</h1>
         </div>
@@ -54,7 +54,7 @@
               </video>
               <!-- <img src="img/kinetic-typography.png" class="image" alt="kinetic-typography" /> -->
               <div class="middle">
-                <div class="text">Kinetic Typography</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Kinetic Typography</div>
               </div>
             </a>
           </div>
@@ -68,7 +68,7 @@
               </video>
               <!-- <img src="" name="slide" class="image" alt="decadent-coloring-book"/> -->
               <div class="middle">
-                <div class="text">The Decadent Coloring Book</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">The Decadent Coloring Book</div>
               </div>
             </a>
           </div>
@@ -77,7 +77,7 @@
             <a href="subpages/dao.html">
               <img src="img/dao.png" class="image" alt="dao" />
               <div class="middle">
-                <div class="text">Dao Interior - UI/UX-Design</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Dao Interior - UI/UX-Design</div>
               </div>
             </a>
           </div>
@@ -86,7 +86,7 @@
             <a href="subpages/locksdown.html">
               <img src="img/locksdown.png" class="image" alt="locksdown" />
               <div class="middle">
-                <div class="text">Locks down</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Locks down</div>
               </div>
             </a>
           </div>
@@ -95,7 +95,7 @@
             <a href="subpages/nelson-mandela.html">
               <img src="img/nelson-mandela-tribute.png" class="image" alt="nelson-mandela-tribute" />
               <div class="middle">
-                <div class="text">Nelson Mandela – Tribute Page</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Nelson Mandela – Tribute Page</div>
               </div>
             </a>
           </div>
@@ -104,7 +104,7 @@
             <a href="subpages/jefuenft.html">
               <img src="img/jefuenft.png" class="image" alt="jefuenft" />
               <div class="middle">
-                <div class="text">Jefünft Exhibition Trailer 2015</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Jefünft Exhibition Trailer 2015</div>
               </div>
             </a>
           </div>
@@ -113,7 +113,16 @@
             <a href="subpages/traveltips.html">
               <img src="img/traveltips.png" class="image" alt="traveltips" />
               <div class="middle">
-                <div class="text">traveltips - UI/UX-Design</div>
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">traveltips - UI/UX-Design</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio-item">
+            <a href="subpages/savetheforests.html">
+              <img src="img/save-the-forests.png" class="image" alt="save-the-forests" />
+              <div class="middle">
+                <div class="text rellax" data-rellax-speed="1" data-rellax-percentage="0.5">Save The Forests – Info Page</div>
               </div>
             </a>
           </div>
@@ -136,14 +145,7 @@
             </a>
           </div> -->
 
-          <div class="portfolio-item">
-            <a href="subpages/savetheforests.html">
-              <img src="img/save-the-forests.png" class="image" alt="save-the-forests" />
-              <div class="middle">
-                <div class="text">Save The Forests – Info Page</div>
-              </div>
-            </a>
-          </div>
+          
         </div>
       </div>
       <!-- END PROJECTS SECTION -->
@@ -185,6 +187,14 @@
         opacity: 0,
         ease: Circ.easeOut,
       })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+    integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+    crossorigin="anonymous"></script>
+
+  <script>
+    var rellax = new Rellax('.rellax');
   </script>
 </body>
 
