@@ -7,14 +7,14 @@
 .glider-next,
 .glider-prev {
     color: black;
-    top: 40%;
+    top: 41%;
 }
 
 .glider-next {
-    right: 3%;
+    right: 1%;
 }
 .glider-prev {
-    left: 3%;
+    left: 1%;
 }
 
 .glider-next:focus,
@@ -54,9 +54,11 @@
         margin-bottom: 3rem;
     }
     .glider-next {
+        display: none;
         right: 2%;
     }
     .glider-prev {
+        display: none;
         left: 2%;
     }
 }
