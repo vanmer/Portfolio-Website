@@ -39,44 +39,65 @@ a {
   padding: 0 2rem;
 }
 
-.container {
-  .about-header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    padding: 2rem 0 2rem 0;
-    margin-bottom: 2rem;
-    text-align: center;
-    line-height: 1;
-  }
+.about-section {
+  width: 85%;
+  margin: 0 auto 3rem auto;
+  padding-top: 5.5rem;
 
-  .about-section {
-    width: 85%;
-    margin: 0 auto 3rem auto;
-    padding-top: 5.5rem;
+  .about-info {
+    font-size: 3rem;
+    font-weight: 400;
 
-    .about-info {
-      font-size: 2.25rem;
-      font-weight: 400;
-
-      p {
-        margin-bottom: 1.1em;
-      }
+    p {
+      margin-bottom: 1.1em;
     }
+  }
+}
+
+.policy-section {
+  border-top: 1px solid $primary-color;
+  padding-top: 3rem;
+  width: 85%;
+  margin: 0 auto;
+
+  .dsvgo {
+    column-count: 2;
+    column-gap: 2rem;
+    font-size: 0.8rem;
   }
 }
 
 .link {
   color: $primary-color;
   text-decoration: underline;
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 400;
 
   &:hover {
     text-decoration: line-through;
   }
+}
+
+.go-back {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 4rem;
+  color: $primary-color;
+  border: 3px solid $primary-color;
+  width: 5.25rem;
+  padding: 0.5rem;
+
+  i {
+    margin-right: 0.7rem;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    background: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
 
 // .contact-section {
 //   display: flex;
@@ -94,25 +115,20 @@ a {
 //     }
 //   }
 
-  .go-back {
-    font-weight: 500;
-    line-height: 1.2;
-    margin-top: 4rem;
-    color: $primary-color;
-    border: 3px solid $primary-color;
-    width: 5.25rem;
-    padding: 0.5rem;
+// .container {
+//   .about-header {
+//     display: flex;
+//     width: 100%;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 2.5rem;
+//     padding: 2rem 0 2rem 0;
+//     margin-bottom: 2rem;
+//     text-align: center;
+//     line-height: 1;
+//   }
+// }
 
-    i {
-      margin-right: 0.7rem;
-    }
-
-    &:hover {
-      color: $secondary-color;
-      background: $primary-color;
-      border-color: $primary-color;
-    }
-  }
-}
+ 
 
 @import "media-about";
