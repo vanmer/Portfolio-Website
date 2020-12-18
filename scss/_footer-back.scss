@@ -20,7 +20,15 @@
 @media (max-width: 1030px) {
   .footer {
     .home {
-      margin-left: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    .home {
+      margin-left: 0;
     }
   }
 }
