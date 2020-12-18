@@ -53,12 +53,13 @@ a {
   }
 
   .about-section {
-    width: 600px;
+    width: 85%;
     margin: 0 auto 3rem auto;
+    padding-top: 5.5rem;
 
     .about-info {
-      font-size: 1.7em;
-      font-weight: 300;
+      font-size: 2.25rem;
+      font-weight: 400;
 
       p {
         margin-bottom: 1.1em;
@@ -67,19 +68,31 @@ a {
   }
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.4rem;
+.link {
+  color: $primary-color;
+  text-decoration: underline;
+  font-size: 2.25rem;
+  font-weight: 400;
 
-  .mail {
-    color: $fourth-color;
-    font-size: 1.6rem;
-
-    &:hover {
-      text-decoration: line-through;
-    }
+  &:hover {
+    text-decoration: line-through;
   }
+
+// .contact-section {
+//   display: flex;
+//   flex-direction: column;
+//   font-size: 1.4rem;
+
+//   .link {
+//     color: $primary-color;
+//     text-decoration: underline;
+//     font-size: 2.25rem;
+//     font-weight: 400;
+
+//     &:hover {
+//       text-decoration: line-through;
+//     }
+//   }
 
   .go-back {
     font-weight: 500;
