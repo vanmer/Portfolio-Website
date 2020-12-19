@@ -1,36 +1,40 @@
 @import "config";
 
 .back-to-top {
-    position: fixed;
-    bottom: 47%;
-    right: 0.55rem;
-    padding: 1rem;
-    z-index: 100;
-    scroll-behavior: smooth;
+  position: fixed;
+  bottom: 47%;
+  right: 0.7rem;
+  padding: 1rem;
+  z-index: 100;
+  scroll-behavior: smooth;
 }
 
 .arrow-up {
-    width: 1.8rem;
+  width: 1.8rem;
 }
 
 @media (max-width: 1030px) {
-    .arrow-up {
-        width: 1.6rem;
-      }
+  .arrow-up {
+    width: 1.6rem;
+  }
 }
 
 @media (max-width: 770px) {
-  .arrow-up {
-    width: 1.4rem;
+  .back-to-top {
+    // right: 0.6rem;
+    display: none;
   }
-    
+  .arrow-up {
+    // width: 1.4rem;
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
-    .back-to-top {
-        display: none;
-    }
-    .arrow-up {
-        display: none;
-      }
+  .back-to-top {
+    display: none;
+  }
+  .arrow-up {
+    display: none;
+  }
 }

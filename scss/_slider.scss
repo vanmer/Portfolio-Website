@@ -22,10 +22,16 @@
 .glider-prev:focus,
 .glider-prev:hover {
   color: #474747;
+  cursor: url("../img/cursor/cursor-green.png")  10 10, auto;
+}
+
+.glider-dot:hover {
+    cursor: url("../img/cursor/cursor-green.png")  10 10, auto;
 }
 
 .glider-dot.active {
     background: black;
+    cursor: url("../img/cursor/cursor-green.png")  10 10, auto;
 }
 
 .glider {
