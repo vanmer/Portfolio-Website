@@ -1,0 +1,23 @@
+.arrow-left {
+    width: 6rem;
+    z-index: 15;
+}
+
+@media (max-width: 1030px) {
+    .arrow-left {
+        width: 5rem;
+      }
+}
+
+@media (max-width: 770px) {
+  .arrow-left {
+    width: 4.5rem;
+  }
+    
+}
+
+@media (max-width: 500px) {
+    .arrow-left {
+        width: 3.5rem;
+      }
+}

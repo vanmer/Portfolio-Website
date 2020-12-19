@@ -2,6 +2,7 @@
 @import "close";
 @import "cursor";
 @import "footer-back";
+@import "arrow-left";
 
 * {
   margin: 0;
@@ -26,7 +27,6 @@ html {
 body {
   position: relative;
   font-family: $font-stack;
-  // font-weight: 500;
   color: $primary-color;
   background-color: $secondary-color;
 }
