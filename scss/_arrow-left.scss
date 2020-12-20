@@ -1,18 +1,18 @@
 .arrow-left {
-    width: 4.8rem;
+    width: 4rem;
     z-index: 15;
 }
 
 @media (max-width: 1030px) {
     .arrow-left {
-        width: 4.4rem;
+        width: 4rem;
         padding-left: 1.5rem;
       }
 }
 
 @media (max-width: 770px) {
   .arrow-left {
-    width: 3.8rem;
+    width: 3.6rem;
   }
     
 }
