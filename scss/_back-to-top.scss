@@ -2,30 +2,29 @@
 
 .back-to-top {
   position: fixed;
-  bottom: 47%;
-  right: 0.7rem;
+  bottom: 4.75rem;
+  // bottom: 12rem;
+  right: 1rem;
   padding: 1rem;
   z-index: 100;
   scroll-behavior: smooth;
 }
 
 .arrow-up {
-  width: 1.8rem;
+  width: 1.7rem;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1280px) {
   .arrow-up {
-    width: 1.6rem;
+    width: 1.7rem;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1000px) {
   .back-to-top {
-    // right: 0.6rem;
     display: none;
   }
   .arrow-up {
-    // width: 1.4rem;
     display: none;
   }
 }
