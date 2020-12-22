@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://use.fontawesome.com/de50a042e8.js"></script>
+    <link rel="icon" href="../img/heart-favicon.svg" />
     <link rel="stylesheet" href="../css/about.min.css" />
     <title>About</title>
   </head>
@@ -401,7 +402,9 @@
           opacity: 0,
         })
         .from(".policy-section", {
+          ease: Circ.easeOut,
           opacity: 0,
+          y: 50
         })
         .from(".footer", {
           opacity: 0,
