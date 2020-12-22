@@ -190,6 +190,7 @@
     });
 
     tl.from(".text-block", {
+        ease: Circ.easeOut,
         y: -50,
         stagger: 0.6,
         opacity: 0
@@ -199,6 +200,10 @@
         opacity: 0,
       })
       .from(".footer", {
+        opacity: 0,
+        ease: Circ.easeOut,
+      })
+      .from(".footer-paragraph", {
         opacity: 0,
         ease: Circ.easeOut,
       })
