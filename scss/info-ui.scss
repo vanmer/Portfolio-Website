@@ -1,5 +1,4 @@
 @import "config";
-@import "utils";
 @import "slider";
 @import "gallery";
 @import "cursor";
@@ -215,7 +214,6 @@ a {
 
   .style-guide {
     grid-column: span 8;
-    // order: 3;
     margin-top: -2rem;
 
     .image-desktop {

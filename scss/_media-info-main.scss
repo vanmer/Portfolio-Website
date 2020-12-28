@@ -1,0 +1,88 @@
+@media (max-width: 1400px) {
+    #wrapper {
+      padding: 0 8em;
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    #wrapper {
+      padding: 0 5em;
+    }
+    .project-name {
+      .project-title {
+        font-size: 4rem;
+      }
+    }
+   
+  }
+  
+  @media (max-width: 1030px) {
+    #wrapper {
+      padding: 0;
+    }
+    .project-name {
+      .project-title {
+        font-size: 3.5rem;
+      }
+    }
+    .footer {
+      .home {
+        margin-left: 2rem;
+      }
+    }
+  }
+  
+  @media (max-width: 770px) {
+    #wrapper {
+      padding: 0;
+    }
+    .project-name {
+      .project-title {
+        font-size: 3rem;
+        width: 60%;
+      }
+    }
+    .project-info {
+      grid-column: 3 / 7;
+    }
+  }
+  
+  @media only screen and (orientation: portrait) and (max-width: 500px) {
+    .project-name {
+      width: 100%;
+      padding: 1.6rem 0;
+      line-height: 1.2;
+  
+      .project-title {
+        font-size: 2rem;
+        width: 60%;
+      }
+    }
+  
+    .portfolio-item {
+      margin-top: 2rem;
+    }
+    .project-desc {
+      font-size: 1.3rem;
+    }
+    .projects-grid .project-info {
+      grid-column: 2 / 8;
+    }
+    .middle {
+      opacity: 1;
+    }
+    .projects-grid .mockup {
+      padding: 2rem 0;
+    }
+    .projects-grid .mockup-item {
+      padding: 1rem 0;
+    }
+    .projects-grid .style-guide .image-desktop {
+      display: none;
+    }
+    .projects-grid .style-guide .image-mobile {
+      display: block;
+    }
+  
+  }
+  
