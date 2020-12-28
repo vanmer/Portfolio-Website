@@ -1,4 +1,5 @@
 @import "config";
+@import "utils";
 @import "slider";
 @import "gallery";
 @import "cursor";
@@ -127,6 +128,7 @@ a {
       flex-direction: column;
       font-size: 1.3rem;
       font-weight: 300;
+      padding: 0 1.5rem;
 
       .info {
         font-weight: 300;
@@ -166,8 +168,6 @@ a {
   }
 
   .show {
-    // order: 2;
-
     &-item {
       margin-bottom: 0.75rem;
     }
@@ -176,7 +176,7 @@ a {
   img.resize {
     width: 100%; /* you can use % */
     height: auto;
-}
+  }
 
 
   .portfolio-item {
@@ -232,14 +232,10 @@ a {
   grid-column: span 8;
   width: 100%;
   height: auto;
-  // margin-top: 1rem;
-  // margin-bottom: 2.5rem;
-  // order: 0;
 }
 
 .gallery-section {
   grid-column: span 8;
-  // order: 5;
   width: 100%;
   height: auto;
   padding: 0 0 3rem 0;
