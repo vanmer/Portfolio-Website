@@ -44,6 +44,16 @@ a {
     &:hover {
         text-decoration: line-through;
     }
+
+    &::-moz-selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+
+    &::selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
 }
 
 .italic {
@@ -114,6 +124,16 @@ a {
     .project-title {
         width: 70%;
         margin: auto 0;
+
+        &::-moz-selection {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+
+        &::selection {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
     }
 }
 
@@ -135,6 +155,16 @@ a {
             line-height: 1.3;
             font-size: 1.4rem;
             margin-top: 1.2rem;
+
+            &::-moz-selection {
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+
+            &::selection {
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
         }
 
         .project-desc {
@@ -172,7 +202,6 @@ a {
 
     .mockup {
         grid-column: span 8;
-        // order: 2;
         width: 100%;
         height: auto;
 
@@ -188,8 +217,7 @@ a {
     }
 
     img.resize {
-        width: 100%;
-        /* you can use % */
+        width: 100%; /* you can use % */
         height: auto;
     }
 
