@@ -51,6 +51,16 @@ a {
 
     p {
       margin-bottom: 1.1em;
+
+      &::-moz-selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+
+      &::selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
     }
   }
 }
@@ -63,6 +73,7 @@ a {
   margin: 0 auto;
   font-weight: 400;
 
+
   .dsvgo {
     column-count: 2;
     column-gap: 2rem;
@@ -73,12 +84,53 @@ a {
       font-size: 1rem;
       font-weight: 800;
       padding-bottom: 1.5rem;
+
+      &::-moz-selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+
+      &::selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
     }
 
-    h3, h4 {
+    h3,
+    h4 {
       font-size: 1rem;
       font-weight: 400;
       padding: 1.5rem 0 1.5rem 0;
+
+      &::-moz-selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+
+      &::selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+
+    p::-moz-selection {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+
+    p::selection {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+
+    span::-moz-selection {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+
+    span::selection {
+      background-color: $primary-color;
+      color: $secondary-color;
     }
 
     ul {
@@ -86,6 +138,16 @@ a {
 
       li {
         margin-left: 1.5rem;
+
+        &::-moz-selection {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
+
+        &::selection {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
       }
     }
 
@@ -94,6 +156,16 @@ a {
 
       strong {
         font-weight: 400;
+
+        &::-moz-selection {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
+
+        &::selection {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
       }
     }
 
@@ -103,6 +175,16 @@ a {
 
       &:hover {
         text-decoration: line-through;
+      }
+
+      &::-moz-selection {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+
+      &::selection {
+        background-color: $primary-color;
+        color: $secondary-color;
       }
     }
 
@@ -122,6 +204,16 @@ a {
   &:hover {
     text-decoration: line-through;
   }
+
+  &::-moz-selection {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+
+  &::selection {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
 }
 
 .footer {
@@ -129,7 +221,5 @@ a {
   margin: 0 auto;
 }
 
-
- 
 
 @import "media-about";
