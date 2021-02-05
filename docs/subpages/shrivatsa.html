@@ -90,40 +90,66 @@
     </div>
   </div>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
   <script>
     var tl = gsap.timeline({
       defaults: {
         duration: 1,
-      },
-    });
+      }
+    })
+
     tl.from(".project-title", {
         y: -80,
-        stagger: 0.6,
+        // stagger: 0.6,
         opacity: 0,
         ease: Circ.easeOut,
       })
       .from(".close", {
         opacity: 0,
       })
-      .from(".video", {
-        opacity: 0,
-      })
-      .from(".project-info", {
-        opacity: 0,
-      })
-      .from(".show-item", {
-        opacity: 0,
-        y: 50,
-        stagger: 0.7,
-      })
-      .from(".footer", {
-        opacity: 0,
-        y: 90,
-        ease: Circ.easeOut,
+      .to(".video", {
+        autoAlpha: 1,
+        ease: Power3.easeOut
+      }, 0.6)
+      .from(".project-desc", {
+        opacity: 0
       });
+
+    // Only Animate once on sight
+    const shows = gsap.utils.toArray('.show-item');
+
+    // Set things up
+    gsap.set(shows, {
+      autoAlpha: 0,
+      y: 80
+    });
+
+    shows.forEach((showItem, i) => {
+      // Set up your animation
+      const anim = gsap.to(showItem, {
+        duration: 1,
+        autoAlpha: 1,
+        y: 0,
+        paused: true
+      });
+
+      // Use callbacks to control the state of the animation
+      ScrollTrigger.create({
+        trigger: showItem,
+        end: "bottom bottom",
+        once: true,
+        onEnter: self => {
+          // If it's scrolled past, set the state
+          // If it's scrolled to, play it
+          self.progress === 1 ? anim.progress(1) : anim.play()
+        }
+      });
+    });
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"

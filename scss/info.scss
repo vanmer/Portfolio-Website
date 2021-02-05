@@ -89,6 +89,13 @@ a {
 .video {
     object-fit: fill;
     width: 100%;
+    visibility: hidden;
+}
+
+.video-mockup {
+    object-fit: fill;
+    width: 100%;
+
 }
 
 .text {
