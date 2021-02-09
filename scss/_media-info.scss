@@ -33,6 +33,9 @@
     .projects-grid .project-info p {
       font-size: 1.3rem;
     }
+    .projects-grid .show-animation-item{
+      padding-bottom: 2.5rem;
+    }
   }
   
   @media (max-width: 770px) {
@@ -50,6 +53,9 @@
       p {
         font-size: 1.2rem;
       }
+    }
+    .projects-grid .show-animation-item{
+      padding-bottom: 2rem;
     }
   }
   
