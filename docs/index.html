@@ -201,18 +201,27 @@
       },
     });
 
-    gsap.set(".text-block", {
-      autoAlpha: 0,
-      y: -50,
-    });
-
     gsap.set(".hero", {
       autoAlpha: 0
     })
 
+    gsap.set(".nav a", {
+      autoAlpha: 0
+    })
+
+    gsap.set(".text-block", {
+      autoAlpha: 0,
+      y: -50,
+    });
+    
     tl.to(".hero", {
       autoAlpha: 1,
       duration: 1
+      })
+      .to(".nav a", {
+        autoAlpha: 1,
+        stagger: 0.2,
+        duration: 0.5
       })
       .to(".text-block", {
         autoAlpha: 1,
