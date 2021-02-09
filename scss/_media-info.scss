@@ -30,6 +30,9 @@
         margin-left: 2rem;
       }
     }
+    .projects-grid .project-info p {
+      font-size: 1.3rem;
+    }
   }
   
   @media (max-width: 770px) {
@@ -42,8 +45,11 @@
         width: 60%;
       }
     }
-    .project-info {
-      grid-column: 3 / 7;
+    .projects-grid .project-info {
+      grid-column: 1 / 9;
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
   
@@ -95,6 +101,8 @@
     .projects-grid .style-guide .image-mobile {
       display: block;
     }
-  
+    .footer {
+      padding: 1.2rem 1rem 1.2rem 1rem;
+    }
   }
   
