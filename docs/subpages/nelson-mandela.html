@@ -22,7 +22,7 @@
     </div>
 
     <div class="projects-grid">
-      <div class="portfolio-item noselect show-item">
+      <div class="portfolio-item noselect">
         <a href="https://nelson-mandela-tribute.life/">
           <img src="../img/nelson-mandela-tribute.png" class="image border" alt="nelson-link" />
           <div class="middle">
@@ -96,33 +96,23 @@
         duration: 1,
       },
     });
-    tl.from(".project-title", {
-        y: -80,
+
+    gsap.set(".project-title", {
+      y: -80,
+    });
+
+    tl.to(".project-title", {
+        y: 0,
         stagger: 0.6,
-        opacity: 0,
+        autoAlpha: 1,
         ease: Circ.easeOut,
       })
       .from(".close", {
         opacity: 0,
       })
-    // .from(".portfolio-item", {
-    //   opacity: 0,
-    // })
-    // .from(".mockup-item", {
-    //   opacity: 0,
-    //   stagger: 0.6,
-    // })
-    // .from(".style-guide", {
-    //   opacity: 0,
-    // })
-    // .from(".project-desc", {
-    //   opacity: 0,
-    // })
-    // .from(".footer", {
-    //   opacity: 0,
-    //   y: 90,
-    //   ease: Circ.easeOut,
-    // });
+      .from(".portfolio-item", {
+        opacity: 0,
+      });
 
     // Only Animate once on sight
     const shows = gsap.utils.toArray('.show-item');

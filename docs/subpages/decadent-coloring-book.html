@@ -138,21 +138,26 @@
                 duration: 1
             }
         });
-        tl.from(".project-title", {
+
+        gsap.set(".project-title", {
             y: -80,
-            stagger: 0.6,
-            opacity: 0,
-            ease: Circ. easeOut,
+        });
+
+        tl.to(".project-title", {
+                y: 0,
+                stagger: 0.6,
+                autoAlpha: 1,
+                ease: Circ.easeOut,
             })
-          .from(".close", {
-            opacity: 0,
-          })
-          .to(".carousel-section", {
-            autoAlpha: 1,
-          })
-          .from(".project-info", {
-            opacity: 0,
-          });
+            .from(".close", {
+                opacity: 0,
+            })
+            .to(".carousel-section", {
+                autoAlpha: 1,
+            })
+            .from(".project-info", {
+                opacity: 0,
+            });
     </script>
 </body>
 

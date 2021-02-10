@@ -103,10 +103,14 @@
       }
     })
 
-    tl.from(".project-title", {
-        y: -80,
-        // stagger: 0.6,
-        opacity: 0,
+    gsap.set(".project-title", {
+      y: -80,
+    })
+
+    tl.to(".project-title", {
+        y: 0,
+        stagger: 0.6,
+        autoAlpha: 1,
         ease: Circ.easeOut,
       })
       .from(".close", {
@@ -115,7 +119,7 @@
       .to(".video", {
         autoAlpha: 1,
         ease: Power3.easeOut
-      }, 0.6)
+      })
       .from(".project-desc", {
         opacity: 0
       });

@@ -92,10 +92,15 @@
         duration: 1,
       },
     });
-    tl.from(".project-title", {
-        y: -80,
+
+    gsap.set(".project-title", {
+      y: -80,
+    })
+
+    tl.to(".project-title", {
         stagger: 0.6,
-        opacity: 0,
+        y: 0,
+        autoAlpha: 1,
         ease: Circ.easeOut,
       })
       .from(".close", {

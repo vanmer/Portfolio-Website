@@ -132,6 +132,7 @@ a {
     .project-title {
         width: 70%;
         margin: auto 0;
+        visibility: hidden;
 
         &::-moz-selection {
             background-color: $primary-color;
