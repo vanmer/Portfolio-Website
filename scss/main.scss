@@ -54,6 +54,7 @@ a {
     font-size: 2rem;
     padding: 0.8rem 2.2rem;
     color: $primary-color;
+    visibility: hidden;
   }
 
   a:hover {
@@ -69,6 +70,7 @@ a {
 .hero {
   height: 100%;
   position: relative;
+  visibility: hidden;
 
   canvas {
     position: absolute;
@@ -96,6 +98,7 @@ a {
   max-width: 700px;
   padding: 0.5em 0;
   margin-left: 0.4rem;
+  visibility: hidden;
 }
 
 h1,
