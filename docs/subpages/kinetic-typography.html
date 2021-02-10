@@ -166,24 +166,22 @@
         autoAlpha: 1,
         ease: Circ.easeOut,
       })
-      .from(".close", {
-        opacity: 0,
+      .to(".close", {
+        autoAlpha: 1,
       })
       .from(".show-animation-item", {
         stagger: 1.2,
         opacity: 0,
-        delay: 1,
+        // delay: 1,
         ease: Circ.easeOut,
       })
       .from(
         ".show-animation-mobile-item", {
           stagger: 1.2,
           opacity: 0,
-          delay: 1,
+          // delay: 1,
           ease: Circ.easeOut,
-        },
-        "-=10"
-      );
+        });
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"

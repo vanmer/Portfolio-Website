@@ -340,17 +340,17 @@
                 autoAlpha: 1,
                 ease: Circ.easeOut,
             })
-            .from(".close", {
-                opacity: 0,
+            .to(".close", {
+                autoAlpha: 1,
             })
             .to(".video", {
                 autoAlpha: 1,
-                duration: 0.9,
+                // duration: 0.9,
                 ease: Power3.easeOut
-            }, 0.6)
+            }, 1.4)
             .from(".project-desc", {
                 opacity: 0,
-            }, 1.2);
+            }, 2);
 
         // Only Animate once on sight
         const shows = gsap.utils.toArray('.gallery a');
