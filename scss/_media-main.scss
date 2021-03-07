@@ -9,30 +9,30 @@
 
 @media (max-width: 1025px) {
   .welcome-content {
-    padding-left: 2em;
+    padding-left: 2rem;
   }
   .middle {
     width: 22rem;
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 780px) {
+@media only screen and (orientation: landscape) and (max-width: 768px) {
   .welcome-sub {
     font-size: 2.2em;
   }
   .welcome-content {
-    margin-top: 6em;
-    padding-left: 1.2em;
+    // margin-top: 6rem;
+    padding-left: 1.2rem;
     text-align: left;
   }
   .welcome-sub {
     line-height: 1.5;
   }
   .text-block h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
   .text-block h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     line-height: 1.2;
   }
   .middle {
@@ -45,9 +45,9 @@
 
 @media only screen and (orientation: portrait) and (max-width: 500px) {
   .welcome-content {
-    margin-top: 4em;
+    // margin-top: 4em;
     padding: 0 2em;
-    text-align: center;
+    // text-align: center;
   }
   .welcome-heading {
     font-size: 2.2em;
