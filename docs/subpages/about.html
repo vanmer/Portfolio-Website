@@ -12,6 +12,15 @@
 </head>
 
 <body>
+  <!-- START COOKIE BANNER -->
+  <div id="footer-cookie">
+    <span id="description">
+      This website uses cookies. Please see our <a href="#privacy-guidelines">Privacy Guidelines</a> for further
+      details.
+    </span>
+    <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">OK</a></span>
+  </div>
+  <!-- END COOKIE BANNER -->
   <div id="wrapper">
     <div class="close">
       <a href="../index.html"><img src="../img/close-icon.svg" alt="close-icon" /></a>
@@ -215,7 +224,7 @@
               rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>
         </div>
       </div>
-      <div class="policy-section">
+      <div class="policy-section" id="privacy-guidelines">
         <div class="dsvgo">
           <h2>Imprint | Privacy Policy (EN)</h2>
           <p>
@@ -505,6 +514,8 @@
     </div>
   </div>
 
+  <script src="../js/cookie-banner.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"></script>
@@ -519,15 +530,15 @@
       })
       .from(".about-info", {
         opacity: 0,
-      })
+      }, -0.1)
       .from("#mail", {
         opacity: 0,
-      })
+      }, -0.2)
       .from(".policy-section", {
         ease: Circ.easeOut,
         opacity: 0,
         y: 50
-      })
+      }, -0.2)
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
