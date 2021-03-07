@@ -12,7 +12,7 @@ var mouse = {
 
 var circleAmount = 500;
 var maxRadius = 40;
-var minRadius = 5;
+var minRadius = 3;
 
 colorArray = [
   "#5BC0EB",
