@@ -345,11 +345,10 @@
             })
             .to(".video", {
                 autoAlpha: 1,
-                // duration: 0.9,
                 ease: Power3.easeOut
             }, 1.4)
-            .from(".project-desc", {
-                opacity: 0,
+            .to(".project-info", {
+                autoAlpha: 1
             }, 2);
 
         // Only Animate once on sight

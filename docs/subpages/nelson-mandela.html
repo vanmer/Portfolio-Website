@@ -31,6 +31,20 @@
         </a>
       </div>
 
+      <div class="project-info">
+        <div class="project-desc">
+          <p>2020</p>
+          <p>
+            This is a tribute page of larger than life Nelson Mandela.<br />The
+            site was built with Sass and is fully responsive for all devices.
+          </p>
+          <p class="italic">
+            Web Design, Web Development<br />Responsive Website
+          </p>
+          <a href="https://github.com/vanmer/Nelson-Mandela-Tribute-Page" class="github">Github Repository</a>
+        </div>
+      </div>
+
       <div class="mockup">
         <div class="mockup-item show-item">
           <video autoplay loop muted class="video-mockup">
@@ -64,19 +78,7 @@
         </div>
       </div>
 
-      <div class="project-info">
-        <div class="project-desc show-item">
-          <p>2020</p>
-          <p>
-            This is a tribute page of larger than life Nelson Mandela.<br />The
-            site was built with Sass and is fully responsive for all devices.
-          </p>
-          <p class="italic">
-            Web Design, Web Development<br />Responsive Website
-          </p>
-          <a href="https://github.com/vanmer/Nelson-Mandela-Tribute-Page" class="github">Github Repository</a>
-        </div>
-      </div>
+     
     </div>
 
     <div class="footer">
@@ -112,6 +114,9 @@
       })
       .from(".portfolio-item", {
         opacity: 0,
+      })
+      .to(".project-info", {
+        autoAlpha: 1
       });
 
     // Only Animate once on sight
