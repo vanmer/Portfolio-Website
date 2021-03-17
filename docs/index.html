@@ -233,7 +233,6 @@
     // })
 
     gsap.set(".text-block", {
-      // autoAlpha: 0,
       y: -50,
     });
 
@@ -257,8 +256,8 @@
         stagger: 0.25,
         autoAlpha: 1,
       })
-      .from(".footer-paragraph", {
-        opacity: 0,
+      .to(".footer-paragraph", {
+        autoAlpha: 1,
         ease: Circ.easeOut,
       });
   </script>
