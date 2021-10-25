@@ -1,6 +1,6 @@
 .close {
     position: fixed;
-    width: 2.7rem;
+    width: 2rem;
     top: 1.5rem;
     right: 1.5rem;
     z-index: 15;
@@ -9,13 +9,13 @@
 
 @media (max-width: 1030px) {
     .close {
-        width: 2.2rem;
+        width: 1.6rem;
       }
 }
 
 @media (max-width: 768px) {
   .close {
-    width: 2rem;
+    width: 1.4rem;
   }
     
 }
@@ -24,6 +24,6 @@
     .close {
         top: 1.2rem;
         right: 1.2rem;
-        width: 1.7rem;
+        width: 1.4rem;
       }
 }
