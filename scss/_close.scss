@@ -1,7 +1,7 @@
 .close {
     position: fixed;
     width: 2rem;
-    top: 1.5rem;
+    top: 1.8rem;
     right: 1.5rem;
     z-index: 15;
     visibility: hidden;
@@ -9,13 +9,13 @@
 
 @media (max-width: 1030px) {
     .close {
-        width: 1.6rem;
+        width: 1.8em;
       }
 }
 
 @media (max-width: 768px) {
   .close {
-    width: 1.5rem;
+    width: 1.6rem;
   }
     
 }
