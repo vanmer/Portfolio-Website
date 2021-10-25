@@ -1,9 +1,10 @@
 @import "config";
 @import "close";
-@import "footer-back";
+@import "footer-navigation";
 @import "arrow-left";
 @import "back-to-top";
 @import "utils";
+@import "footer";
 
 * {
   margin: 0;
@@ -216,10 +217,10 @@ a {
   }
 }
 
-.footer {
-  width: 85%;
-  margin: 0 auto;
-}
+// .footer {
+//   width: 85%;
+//   margin: 0 auto;
+// }
 
 @import "cookie";
 @import "media-about";
