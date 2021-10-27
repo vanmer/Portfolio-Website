@@ -226,6 +226,13 @@ a {
         }
     }
 
+    .case {
+        &-item {
+            margin-bottom: -0.5rem;
+            padding: 0; 
+        }
+    }
+
     img.resize {
         width: 100%; /* you can use % */
         height: auto;

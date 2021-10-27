@@ -37,23 +37,23 @@
 
     <div class="projects-grid">
       <div class="presentation-section">
-        <div class="show">
-            <div class="show-item noselect">
+        <div class="case">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-1.jpg" class="resize" alt="" />
             </div>
-            <div class="show-item noselect">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-2.jpg" class="resize" alt="" />
             </div>
-            <div class="show-item noselect">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-3.jpg" class="resize" alt="" />
             </div>
-            <div class="show-item noselect">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-4.jpg" class="resize" alt="" />
             </div>
-            <div class="show-item noselect">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-4.jpg" class="resize" alt="" />
             </div>
-            <div class="show-item noselect">
+            <div class="case-item noselect">
               <img loading="lazy" src="../img/chapeau/Chapeau--Case-Study--Part-5.jpg" class="resize" alt="" />
             </div>
           </div>
@@ -107,16 +107,12 @@
       .to(".close", {
         autoAlpha: 1,
       })
-      .to(".video", {
-        autoAlpha: 1,
-        ease: Power3.easeOut
-      })
       .to(".project-info", {
         autoAlpha: 1
       });
 
     // Only Animate once on sight
-    const shows = gsap.utils.toArray('.show-item');
+    const shows = gsap.utils.toArray('.case-item');
 
     // Set things up
     gsap.set(shows, {
