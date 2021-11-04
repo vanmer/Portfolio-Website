@@ -1,5 +1,4 @@
 @import "config";
-@import "slider";
 @import "gallery";
 @import "close";
 @import "footer-navigation";
@@ -7,6 +6,7 @@
 @import "back-to-top";
 @import "utils";
 @import "footer";
+@import "splide";
 
 * {
     margin: 0;
@@ -347,7 +347,9 @@ a {
     grid-column: span 8;
     width: 100%;
     height: auto;
-    visibility: hidden;
+    // visibility: hidden;
+    opacity: 0;
+    margin-bottom: 2rem;
 }
 
 .gallery-section {

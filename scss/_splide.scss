@@ -1,0 +1,17 @@
+.splide__slide img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+    .splide__pagination {
+        display: none;
+    }
+    .splide__arrow--next {
+        right: 0.5rem;
+    }
+    .splide__arrow--prev {
+        left: 0.5rem;
+    }
+}
