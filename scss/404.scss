@@ -1,0 +1,49 @@
+@import "config";
+@import "footer";
+
+/* Start Template */
+body{
+    background-image: url("https://images.unsplash.com/photo-1616235132417-99f443954d2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    background-size: cover;
+    /* font-family: 'Roboto', 'sans-serif'; */
+    font-family: 'Barlow', Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    // height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header404{
+    /* font-family: 'Chango', cursive; */
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-size: 10rem;
+}
+.content404{
+    text-align: center;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+    .header404 {
+        font-size: 5rem;
+    }
+}
+/* End Template */
+
+.button {
+  background-color: $fifth-color;
+  border: none;
+  color: $secondary-color;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.content-404 {
+    text-align: center;
+}
