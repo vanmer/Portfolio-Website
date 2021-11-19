@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shrivatsa Font</title>
+  <meta name="description" content="Hoa Van Thanh is a Graphic Designer & UI/UX Designer based in Leipzig, Germany. Shrivatsa Font, Typeface Design" />
+  <meta name="keywords" content="Hoa Van Thanh, Graphic Design, Shrivatsa Font, Typeface Design"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://use.fontawesome.com/de50a042e8.js"></script>
+  <link rel="icon" href="../img/eye-favicon.svg" />
+  <link rel="stylesheet" href="../css/info.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- START COOKIE BANNER -->
+  <div id="footer-cookie">
+    <span id="description">
+      This website uses cookies. Please see our <a href="about.html#privacy-guidelines">Privacy Guidelines</a>
+      for further details.
+    </span>
+    <span id="accept"><a href="javascript:void(0)" title="accept">OK</a></span>
+  </div>
+  <!-- END COOKIE BANNER -->
+
+  <div id="wrapper">
+    <div class="close">
+      <a href="../index.html#projects"><img src="../img/close-icon.svg" alt="close-icon" /></a>
+    </div>
+
+    <div class="project-name">
+      <h1 class="project-title">arc wave – Music Player Case Study</h1>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="presentation-section">
+        <div class="show">
+          <div class="show-item noselect">
+            <img loading="lazy" src="../img/arcwave/ArcWave-Mockup-Isometric-3.jpg" class="resize" alt="arc wave Mockup" />
+          </div>
+          <div class="show-item noselect">
+            <img loading="lazy" src="../img/arcwave/ArcWave-Mockup-Front-3.jpg" class="resize" alt="arc wave Mockup" />
+          </div>
+          <div class="show-item noselect">
+            <img loading="lazy" src="../img/arcwave/ArcWave-Mockup-Screens-3.jpg" class="resize" alt="arc wave Mockup" />
+          </div>
+          <div class="show-item noselect">
+            <img loading="lazy" src="../img/arcwave/ArcWave-Logo.png" class="resize" alt="arc wave Logo" />
+          </div>
+          <div class="show-item noselect">
+            <img loading="lazy" src="../img/arcwave/ArcWave-Styleguide.png" class="resize" alt="arc wave Styleguide" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START FOOTER-NAVIGATION SECTION -->
+    <div class="footer-navigation">
+      <div class="arrow-left noselect">
+        <a href="../index.html#projects"><img src="../img/arrow-left.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <!-- END FOOTER-NAVIGATION SECTION -->
+
+      <!-- START FOOTER SECTION -->
+    <section class="footer">
+      <img loading="lazy" src="../img/Dove-Avatar-200.png" class="footer-img" alt="love-dove" />
+       <p class="footer-paragraph">
+        made with <i class="fas fa-heart" title="love"></i> by Hoa Van Thanh
+      </p>
+    </section>
+    <!-- END FOOTER SECTION -->
+  </div>
+
+  <script src="../js/cookie-banner.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+  <script>
+    var tl = gsap.timeline({
+      defaults: {
+        duration: 1,
+      }
+    })
+
+    gsap.set(".project-title", {
+      y: -80,
+    })
+
+    tl.to(".project-title", {
+        y: 0,
+        stagger: 0.6,
+        autoAlpha: 1,
+        ease: Circ.easeOut,
+      })
+      .to(".close", {
+        autoAlpha: 1,
+      });
+
+    // Only Animate once on sight
+    const shows = gsap.utils.toArray('.show-item');
+
+    // Set things up
+    gsap.set(shows, {
+      autoAlpha: 0,
+      y: 80
+    });
+
+    shows.forEach((showItem, i) => {
+      // Set up your animation
+      const anim = gsap.to(showItem, {
+        duration: 1,
+        autoAlpha: 1,
+        y: 0,
+        paused: true
+      });
+
+      // Use callbacks to control the state of the animation
+      ScrollTrigger.create({
+        trigger: showItem,
+        end: "bottom bottom",
+        once: true,
+        onEnter: self => {
+          // If it's scrolled past, set the state
+          // If it's scrolled to, play it
+          self.progress === 1 ? anim.progress(1) : anim.play()
+        }
+      });
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/back-to-top.js"></script>
+</body>
+
+</html>

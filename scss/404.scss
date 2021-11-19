@@ -1,49 +1,74 @@
 @import "config";
 @import "footer";
 
-/* Start Template */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  
 body{
-    background-image: url("https://images.unsplash.com/photo-1616235132417-99f443954d2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
-    background-size: cover;
-    /* font-family: 'Roboto', 'sans-serif'; */
     font-family: 'Barlow', Helvetica, sans-serif;
 }
+
 main{
     display: flex;
-    // height: 100vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.header404{
-    /* font-family: 'Chango', cursive; */
-    font-family: 'Barlow', Helvetica, sans-serif;
-    font-size: 10rem;
+
+.image-desktop-404 {
+    width: 50%;
+    padding: 6rem 4rem;
 }
-.content404{
+
+
+.text-404 {
+    font-size: 1.5rem;
     text-align: center;
 }
 
-@media only screen and (orientation: portrait) and (max-width: 500px) {
-    .header404 {
-        font-size: 5rem;
-    }
-}
-/* End Template */
 
 .button {
-  background-color: $fifth-color;
-  border: none;
-  color: $secondary-color;
+  background-color: $secondary-color;
+  border: 0.25rem solid $primary-color;
+  color: $primary-color;
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   margin: 2rem 0;
   cursor: pointer;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
 }
 
-.content-404 {
-    text-align: center;
+
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+    .text-404 {
+        font-size: 1.25rem;
+        margin: 2rem 0;
+    }
+    .image-desktop-404 {
+        margin-top: -0rem;
+        width: 80%;
+        padding: 6rem 4rem;
+    }
 }
